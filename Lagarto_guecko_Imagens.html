@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NTK4TXD');</script>
+            <!-- End Google Tag Manager -->
         <meta charset="UTF-8">
         <title>
             LAGARTO GECKO
@@ -9,6 +16,10 @@
     </head>
 
     <body style="text-align: center;">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTK4TXD"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
        
         <h1>
             fotos do Gecko
@@ -26,15 +37,22 @@
 
 
         <a href="index.html"><button style="font-size: x-large; background-color: red;">Pagina Inicial</button></a>
+        
+        <button onclick='sol();'style="position: absolute;right: 60px; top: 10px;"><img src="https://w7.pngwing.com/pngs/623/413/png-transparent-computer-icons-symbol-moon-sun-miscellaneous-leaf-monochrome.png" height="25 px" width="25 px" alt="Modo Dia"></button>
+        <button onclick='lua();' style="position: absolute;right: 10px; top: 10px;"><img src="https://image.flaticon.com/icons/png/512/63/63947.png"  height="25 px" width="25 px" alt="Modo noite"></button>
 
         <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            const corpo = document.querySelector("body")
+            function lua (){
+                corpo.style = "background-color: black; color:white; text-align: center " 
+                ga ("send","event","click","click no botão","botão lua")
+            }
 
-            ga('create', 'UA-205460394-1', 'auto');
-            ga('send', 'pageview');
+            function sol(){
+                corpo.style = "background-color: white; color:black; text-align: center"
+                ga ("send","event","click","click no botão","botão sol")
+            }
+            
         </script>
  
 
