@@ -46,10 +46,12 @@
             const corpo = document.querySelector("body")
             function lua (){
                 corpo.style = "background-color: black; color:white; text-align: center " 
+                dataLayer.push({"event":"click","botão":"lua"})
             }
 
             function sol(){
                 corpo.style = "background-color: white; color:black; text-align: center"
+                dataLayer.push({"event":"click","botão":"sol"})
             }
             
         </script>
